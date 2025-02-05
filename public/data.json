@@ -1,0 +1,163 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Dell XPS 15",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 1599.99,
+        "description": "A powerful laptop with Intel Core i7, 16GB RAM, and 512GB SSD.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "15.6-inch 4K UHD"
+        ],
+        "availability": true,
+        "rating": 4.7
+        
+    },
+    {
+        "product_id": 2,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Apple MacBook Air with M2 chip, 8GB RAM, and 256GB SSD.",
+        "Specification": [
+            "Apple M2",
+            "8GB RAM",
+            "256GB SSD",
+            "13.6-inch Retina"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 3,
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "A versatile 2-in-1 laptop with Intel Core i7, 16GB RAM, and 1TB SSD.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "1TB SSD",
+            "13.3-inch Full HD Touch"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 4,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "A business laptop with Intel Core i7, 16GB RAM, and 512GB SSD.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "14-inch WQHD"
+        ],
+        "availability": false,
+        "rating": 4.7
+    },
+    {
+        "product_id": 5,
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 1799.99,
+        "description": "A gaming laptop with AMD Ryzen 9, 32GB RAM, and 1TB SSD.",
+        "Specification": [
+            "AMD Ryzen 9",
+            "32GB RAM",
+            "1TB SSD",
+            "14-inch QHD 165Hz"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 6,
+        "product_title": "Acer Swift 3",
+        "product_image": "https://i.ibb.co.com/nTKrGgw/c08630689.png",
+        "category": "Laptop",
+        "price": 799.99,
+        "description": "A lightweight laptop with AMD Ryzen 7, 16GB RAM, and 512GB SSD.",
+        "Specification": [
+            "AMD Ryzen 7",
+            "16GB RAM",
+            "512GB SSD",
+            "14-inch Full HD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 7,
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://i.ibb.co.com/HDfLLLX1/midnight-1-6.jpg",
+        "category": "Phone",
+        "price": 1099.99,
+        "description": "Apple iPhone 14 Pro with A16 Bionic chip and 128GB storage.",
+        "Specification": [
+            "A16 Bionic Chip",
+            "128GB Storage",
+            "6.1-inch Super Retina XDR",
+            "Triple Camera System"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 8,
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://i.ibb.co.com/HDfLLLX1/midnight-1-6.jpg",
+        "category": "Phone",
+        "price": 1199.99,
+        "description": "Samsung's latest flagship phone with Snapdragon 8 Gen 2 and 256GB storage.",
+        "Specification": [
+            "Snapdragon 8 Gen 2",
+            "256GB Storage",
+            "6.8-inch Dynamic AMOLED",
+            "108MP Quad Camera"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 9,
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://i.ibb.co.com/KHgn0cx/3-Tasten-Maus-Microsoft.jpg",
+        "category": "Accessory",
+        "price": 99.99,
+        "description": "Advanced ergonomic wireless mouse with ultra-fast scrolling and precise control.",
+        "Specification": [
+            "Wireless Connectivity",
+            "Ergonomic Design",
+            "Fast Scrolling",
+            "Customizable Buttons"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 10,
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://i.ibb.co.com/GQB4n1wM/Apple-airpods-max-1.jpg",
+        "category": "Accessory",
+        "price": 349.99,
+        "description": "Premium noise-canceling headphones with superior sound quality and comfort.",
+        "Specification": [
+            "Active Noise Cancellation",
+            "40mm Drivers",
+            "30-Hour Battery Life",
+            "Wireless & Wired Support"
+        ],
+        "availability": true,
+        "rating": 4.9
+    }
+]
