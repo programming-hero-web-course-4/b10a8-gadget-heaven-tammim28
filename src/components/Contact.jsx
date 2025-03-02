@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Contact() {
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+             <Helmet>
+                <title>Gadget Heaven | Contact</title>
+            </Helmet>
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">

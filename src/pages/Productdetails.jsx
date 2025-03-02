@@ -2,21 +2,22 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { CiStar } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
-import { addFavorite, addWishlist, getAllFavorites,  } from "../utility/utility";
+import { addFavorite, addWishlist, getAllFavorites, } from "../utility/utility";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Productdetails = () => {
     const { product_id } = useParams();
     const data = useLoaderData();
-    // console.log('Params:', product_id, 'Data:', data);
+
 
     const [product, setProduct] = useState(null);
-    // console.log('product', product);
+
+    const [isFavorite, setIsFavorite] = useState(true)
 
     useEffect(() => {
         if (data && Array.isArray(data)) {
             const singleProduct = data.find((product) => product.product_id == product_id);
-            // console.log('Single Product:', singleProduct);
+
             setProduct(singleProduct);
         }
     }, [data, product_id]);
@@ -28,25 +29,18 @@ const Productdetails = () => {
     const { product_title, product_image, category,
         price, description, Specification, availability, rating } = product
 
-        // add to cart
 
-        // const handleCart = (product) => {
-        //     // addFavorite(product)
-        //     getAllFavorites()
-        // }
 
-        // gpt here
+    const handleCart = (product) => {
+        addFavorite(product);
 
-        const handleCart = (product) => {
-            addFavorite(product); 
-            // getAllFavorites(); 
-        };
+    };
 
-        const handleWish = (product) => {
-            addWishlist(product);
-        }
-        
-        
+    const handleWish = (product) => {
+        addWishlist(product);
+    }
+
+
 
 
     return (
@@ -62,7 +56,7 @@ const Productdetails = () => {
                 <div>
                     <h1 className="text-2xl font-bold">{product_title}</h1>
                     <p className="my-2 font-semibold">Price: ${price}</p>
-                    <p className="text-green-500">{availability? "In stock" : "Not available"}</p>
+                    <p className="text-green-500">{availability ? "In stock" : "Not available"}</p>
                     <p className="my-2">{description}</p>
                     <h4 className="text-xl">Specification: {Specification.map(specific => <li>{specific}</li>)}</h4>
                     <h4 className="text-xl font-semibold mt-2">Rating:</h4>
@@ -76,12 +70,18 @@ const Productdetails = () => {
                         <button onClick={() => handleCart(product)} className="px-3 py-2 bg-purple-500 
                         text-white rounded-3xl cursor-pointer">Add to Card</button>
                         <ToastContainer></ToastContainer>
-                        <FaRegHeart onClick={() => handleWish(product)} className="text-3xl cursor-pointer text-purple-500 "></FaRegHeart>
+                        <div aria-disabled={isFavorite} className="bg-purple-500 px-3 py-2 rounded-3xl">
+                        <FaRegHeart  onClick={() =>
+                                handleWish(product)} className="text-2xl cursor-pointer  
+                             "></FaRegHeart>
+                        </div>
+                           
+                        
                     </div>
                 </div>
             </div>
 
-            
+
         </div>
     );
 };

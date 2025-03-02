@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import bannarimg from '../../public/assets/banner.jpg'
 
 
 const Banner = () => {
@@ -11,7 +12,7 @@ const Banner = () => {
                  text-purple-500 font-semibold py-2 my-4">Shop Now</button></Link>
             </div>
             <div className="h-[400px] w-[600px]  mx-auto">
-                <img className="rounded-3xl outline-1" src="../../public/assets/banner.jpg" alt="" />
+                <img className="rounded-3xl outline-1" src={bannarimg} alt="" />
             </div>
             <div className="text-center font-bold text-4xl my-12">
                 <h2>Explore Cutting-Edge Gadgets</h2>

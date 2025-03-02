@@ -45,7 +45,8 @@ const router = createBrowserRouter([
             children: [
                 {
                     path: '/dashboard/cart',
-                    element: <Cart></Cart>
+                    element: <Cart></Cart>,
+                    loader: () => fetch('../data.json'),
                 },
                 {
                     path: '/dashboard/wishlist',

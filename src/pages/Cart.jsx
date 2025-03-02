@@ -4,6 +4,7 @@ import Card from "../components/Card";
 
 
 const Cart = () => {
+   
     const [products, setProducts] = useState([])
 
     useEffect(() => {
@@ -11,16 +12,28 @@ const Cart = () => {
         setProducts(favorites)
     }, [])
 
+    const handleSort = sortBy => {
+        if(sortBy = 'price'){
+            const sorted = [...products].sort((a, b) => b.price - a.price)
+            setProducts(sorted)
+           
+        }
+    }
+
+
+
     return (
         <div>
             <div className="flex items-center justify-between container my-6 mx-auto">
                 <h2 className="text-xl font-bold">Cart</h2>
                 <div className="flex items-center gap-3">
                     <h4 className="text-xl font-bold">Total price:</h4>
+                    <button onClick={() => handleSort('price')} className="text-purple-700 border border-purple-400 
+                    px-4 font-semibold cursor-pointer py-2 
+                    rounded-3xl hover:bg-blue-400">Sort by price</button>
                     <button className="text-purple-700 border border-purple-400 
-                    px-4 font-semibold cursor-pointer py-2 rounded-3xl hover:bg-blue-400">Sort by price</button>
-                    <button className="text-purple-700 border border-purple-400 
-                    px-4 font-semibold cursor-pointer py-2 rounded-3xl hover:bg-blue-400">Purchase</button>
+                    px-4 font-semibold cursor-pointer py-2 
+                    rounded-3xl hover:bg-blue-400">Purchase</button>
                 </div>
             </div>
 
